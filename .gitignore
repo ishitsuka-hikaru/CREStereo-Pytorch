@@ -152,3 +152,9 @@ cython_debug/
 #.idea/
 
 vis_results/
+
+*.mge
+*.pth
+*~
+stereo_trainset/
+train_log/

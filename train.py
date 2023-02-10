@@ -139,6 +139,7 @@ def main(args):
         start_iters = 0
 
     # datasets
+    assert os.path.exists(args.training_data_path), 'invalid dataset path'
     dataset = CREStereoDataset(args.training_data_path)
     # if rank == 0:
     worklog.info(f"Dataset size: {len(dataset)}")
